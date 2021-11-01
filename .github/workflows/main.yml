@@ -1,0 +1,12 @@
+name: Deploy To Product
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ShopyficTest:
+    runs-on: ubuntu-latest
+    environment: TestProduction
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
